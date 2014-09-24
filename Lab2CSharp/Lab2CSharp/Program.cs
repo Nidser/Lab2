@@ -15,6 +15,10 @@ namespace Lab2CSharp
             Console.Write(s);
 
             Console.ReadLine();
+
+            int i = 0;
+
+            double d = 0.00;
         }
     }
 }
