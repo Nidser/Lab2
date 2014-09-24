@@ -9,17 +9,17 @@ namespace Lab2CSharp
     class Line : Shape
     {
 
-        public int lx { get; set; }
-        public int x1 { get; set; }
-        public int ly { get; set; }
-        public int y1 { get; set; }
+        public int xPoint1 { get; set; }
+        public int yPoint1 { get; set; }
+        public int xPoint2 { get; set; }
+        public int yPoint2 { get; set; }
         public Line(int x, int y, int x1, int y1, string colour)
             : base(colour)
         {
-            this.lx = x;
-            this.x1 = x1;
-            this.ly = y;
-            this.y1 = y1;
+            xPoint1 = x;
+            yPoint1 = x1;
+            xPoint2 = y;
+            yPoint2 = y1;
 
         }
         public Line()
@@ -29,13 +29,17 @@ namespace Lab2CSharp
 
         public override String ToString()
         {
-            return base.ToString() + " the coordinates of the line is "
-            + lx + " " + ly + " " + x1 + " " + y1;
+            return base.ToString() + " the coordinates of the line are \t("
+            + xPoint1 + " " + yPoint1 + ") and  \t(" + xPoint2 + " " + yPoint2 + ")";
         }
 
         public override void Translate(Vertex v1)
         {
-            //4.	Override the Translate() method to translate the line in 2D space. 
+            //4.	Override the Translate() method to translate the line in 2D space.
+            xPoint1 -= v1.x;
+            yPoint1 -= v1.y;
+            xPoint2 -= v1.x;
+            yPoint2 -= v1.y;
 
         }
 

@@ -30,7 +30,8 @@ namespace Lab2CSharp
 
         public override string ToString()
         {
-            return base.ToString() + " this circle has an x co-ord of " + cx + "and a y co-ord of "+cy+ "with a radius of " + radius;
+            return base.ToString() + "\nthis circle has an x co-ord of " + cx + " and a y co-ord of "+cy+ " with a radius of " + radius
+                +"\n the area of the circle is " + area();
         }
 
         public double area()
@@ -43,6 +44,9 @@ namespace Lab2CSharp
         public override void Translate(Vertex v1)
         {
             //Override the Translate() method to translate the Circle in 2D space. 
+
+            cx = v1.x;
+            cy = v1.y;
 
         }
 
