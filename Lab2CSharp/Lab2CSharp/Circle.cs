@@ -8,8 +8,32 @@ namespace Lab2CSharp
 {
     class Circle : Shape
     {
-        public int cx { get; set; }
-        public int cy { get; set; }
+        private int cx;
+
+        public int Cx
+        {
+            get
+            {
+                return cx;
+            }
+            set
+            {
+                cx = Cx;
+            }
+        }
+        private int cy;
+
+        public int Cy
+        {
+            get
+            {
+                return cy;
+            }
+            set
+            {
+                cx = Cy;
+            }
+        }
 
         public double radius { get; set; }
 

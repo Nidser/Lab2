@@ -10,10 +10,11 @@ namespace Lab2CSharp
     abstract class Shape 
     {
 
-        public string Colour { get; set; }
+        public enum Colour { Red, Green, Blue}
+        public String Col { get; set; }
         public Shape(String Colour)
         {
-            this.Colour = Colour;
+            this.Col = Colour;
         }
 
         public Shape()
@@ -22,7 +23,7 @@ namespace Lab2CSharp
 
         public override String ToString()
         {
-            return "\nThe colour of the shape is " + this.Colour;
+            return "\nThe colour of the shape is " + this.Col;
         }
 
         //one to allow a shape to be translated in 2D space (Translate(..)). 
