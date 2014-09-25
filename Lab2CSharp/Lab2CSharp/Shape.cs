@@ -11,13 +11,13 @@ namespace Lab2CSharp
     {
 
         public enum Colour { Red, Green, Blue}
-        public String Col { get; set; }
-        public Shape(String Colour)
+        public string Col { get; set; }
+        protected Shape(string Colour)
         {
             this.Col = Colour;
         }
 
-        public Shape()
+        protected Shape()
             : this("")
         { }
 

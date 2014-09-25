@@ -31,7 +31,7 @@ namespace Lab2CSharp
             }
             set
             {
-                cx = Cy;
+                cy = Cy;
             }
         }
 
@@ -69,8 +69,8 @@ namespace Lab2CSharp
         {
             //Override the Translate() method to translate the Circle in 2D space. 
 
-            cx = v1.x;
-            cy = v1.y;
+            cx = v1.X;
+            cy = v1.Y;
 
         }
 

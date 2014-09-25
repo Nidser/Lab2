@@ -36,10 +36,10 @@ namespace Lab2CSharp
         public override void Translate(Vertex v1)
         {
             //4.	Override the Translate() method to translate the line in 2D space.
-            xPoint1 -= v1.x;
-            yPoint1 -= v1.y;
-            xPoint2 -= v1.x;
-            yPoint2 -= v1.y;
+            xPoint1 -= v1.X;
+            yPoint1 -= v1.Y;
+            xPoint2 -= v1.X;
+            yPoint2 -= v1.Y;
 
         }
 
